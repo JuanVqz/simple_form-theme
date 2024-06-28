@@ -1,0 +1,15 @@
+<%= simple_form_for(item, url: item.form) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :url, placeholder: "URL should start with http or https" %>
+  <%= f.input :secret_key, as: :password %>
+  <%= f.input :active, as: :boolean %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :background, as: :color %>
+  <%= f.input :serial_number, as: :integer %>
+  <%= f.input :quantity, as: :decimal %>
+  <%= f.input :published_at, as: :datetime, html5: true %>
+  <%= f.input :expired_at, as: :date, html5: true %>
+  <%= f.input :daily_check_at, as: :time, html5: true %>
+  <%= f.input :form, as: :hidden, value: item.form %>
+  <%= f.button :submit %>
+<% end %>
