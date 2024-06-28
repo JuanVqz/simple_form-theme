@@ -1,0 +1,12 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "version-file": "lib/simple_form/theme/version.rb",
+      "extra-files": [
+        "CHANGELOG.md",
+        "Gemfile.lock"
+      ]
+    }
+  }
+}
