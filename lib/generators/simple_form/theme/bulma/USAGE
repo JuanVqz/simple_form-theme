@@ -1,0 +1,8 @@
+Description:
+    Install the simple form bulma config file in your app.
+
+Example:
+    bin/rails generate simple_form:theme:bulma install
+
+    This will create:
+        config/initializers/simple_form_bulma.rb

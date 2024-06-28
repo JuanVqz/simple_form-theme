@@ -1,6 +1,10 @@
 # SimpleForm::Theme
 Short description and motivation.
 
+### Supported CSS Frameworks
+* [Tailwind CSS](https://tailwindcss.com/docs/installation)
+* [Bulma](https://bulma.io/documentation/start/installation)
+
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -26,8 +30,7 @@ However, if you install the gem, you will get the latest updates and improvement
 ## Requirements
 
 * Make sure you have installed [simple_form](https://github.com/heartcombo/simple_form) gem.
-* Make sure you have installed the decired css framework. (Installing the CSS Framework is out of the scope of this gem).
-  * [Tailwindcss](https://tailwindcss.com/docs/installation)
+* Make sure you have installed the decired css framework.
 
 ## Usage
 
@@ -37,8 +40,14 @@ However, if you install the gem, you will get the latest updates and improvement
 bin/rails generate simple_form:theme:tailwind install
 ```
 
+### Install Bulma CSS initializer
+
+```bash
+bin/rails generate simple_form:theme:bulma install
+```
+
 ## Contributing
-Contribution directions go here.
+Bug reports and pull requests are welcome on GitHub at https://github.com/JuanVqz/simple_form-theme
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
