@@ -1,9 +1,6 @@
 # SimpleForm::Theme
 Short description and motivation.
 
-## Usage
-How to use my plugin.
-
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -13,12 +10,31 @@ gem 'simple_form-theme'
 
 And then execute:
 ```bash
-$ bundle
+bundle
 ```
 
-Or install it yourself as:
+As an alternative instead of adding an additional dependency to your project,
+you can copy the initializer file to your project from the GitHub repository.
+
+Example:
 ```bash
-$ gem install simple_form-theme
+cp lib/generators/simple_form/theme/templates/config/initializers/simple_form_tailwindcss.rb yourapp/config/initializers/simple_form_tailwindcss.rb
+```
+
+However, if you install the gem, you will get the latest updates and improvements.
+
+## Requirements
+
+* Make sure you have installed [simple_form](https://github.com/heartcombo/simple_form) gem.
+* Make sure you have installed the decired css framework. (Installing the CSS Framework is out of the scope of this gem).
+  * [Tailwindcss](https://tailwindcss.com/docs/installation)
+
+## Usage
+
+### Install Tailwind CSS initializer
+
+```bash
+bin/rails generate simple_form:theme:tailwind install
 ```
 
 ## Contributing
