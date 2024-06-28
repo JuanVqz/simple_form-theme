@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/simple_form-theme.svg)](https://badge.fury.io/rb/simple_form-theme)
+
 # SimpleForm::Theme
 Short description and motivation.
 
