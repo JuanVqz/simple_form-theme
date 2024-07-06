@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/JuanVqz/simple_form-theme/compare/v0.1.1...v0.1.2) (2024-06-28)
+
+
+### Bug Fixes
+
+* **simple_form:** Add simple_form initializer ([1613ff6](https://github.com/JuanVqz/simple_form-theme/commit/1613ff6a083dcc1ba784f935a3a52f1c1c8f6b1e))
+
 ## [0.1.1](https://github.com/JuanVqz/simple_form-theme/compare/v0.1.0...v0.1.1) (2024-06-28)
 
 
