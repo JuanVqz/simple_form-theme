@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<%= link_to 'New Item', new_tailwind_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Active</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.active ? "true" : "false" %></td>
+        <td><%= item.url %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
