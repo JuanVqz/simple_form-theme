@@ -36,13 +36,31 @@ However, if you install the gem, you will get the latest updates and improvement
 
 ## Usage
 
-### Install Tailwind CSS initializer
+### Install Tailwind CSS files
 
 ```bash
 bin/rails generate simple_form:theme:tailwind install
 ```
 
-### Install Bulma CSS initializer
+After running this generator, you will see the `config/initializers/simple_form_tailwindcss.rb` file.
+This file adds the Tailwind CSS styles to your application.
+Additionally, the `config/locales/simple_form_tailwind.en.yml` file will add the "required" mark to the required fields.
+However, you need to communicate Tailwind to "watch" those files by adding the following configuration:
+
+```js
+# tailwind.config.js
+
+module.exports = {
+  ...
+  content: [
+    './config/initializers/simple_form_tailwindcss.rb',
+    './config/locales/simple_form*.yml',
+    ...
+  ],
+}
+```
+
+### Install Bulma CSS files
 
 ```bash
 bin/rails generate simple_form:theme:bulma install
