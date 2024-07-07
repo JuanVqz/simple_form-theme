@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gemspec path: '..'
+
+group :development do
+  gem 'sqlite3', '~> 1.6.9'
+end
+
+gem 'rails', '~> 6.1'
+gem 'simple_form', '~> 5.3.0'
