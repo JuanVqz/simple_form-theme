@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.6.0', '< 3.1'
 
-  s.add_dependency 'rails', '>= 6.0', '< 7.1'
+  s.add_dependency 'rails', '>= 6.0', '< 7.2'
   s.add_dependency 'simple_form', '~> 5.3.0'
 end
