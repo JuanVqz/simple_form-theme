@@ -1,0 +1,6 @@
+en:
+  simple_form:
+    required:
+      text: 'required'
+      mark: '*'
+      html: '<abbr class="text-red-500 no-underline" title="required">*</abbr>'

@@ -1,8 +1,6 @@
-Description:
-    Install the simple form tailwindcss config file in your app.
-
-Example:
+Install Command:
     bin/rails generate simple_form:theme:tailwind install
 
     This will create:
         config/initializers/simple_form_tailwindcss.rb
+        config/locales/
