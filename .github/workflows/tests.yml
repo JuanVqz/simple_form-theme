@@ -1,27 +1,32 @@
+name: tests
+
 on:
   workflow_dispatch:
   pull_request:
     branches:
       - main
-
-name: tests
-
 jobs:
-  tests:
+  test:
+    name: Ruby ${{ matrix.ruby }} / ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
-    name: Ruby ${{ matrix.ruby }}
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     strategy:
       matrix:
-        ruby: ['2.6', '2.7', '3.0.7']
+        gemfile:
+          - Gemfile
+          - gemfiles/rails-6-0.gemfile
+        ruby:
+          - '3.0'
+          - '2.7'
+          - '2.6'
+        exclude:
+          - ruby: '3.0'
+            gemfile: gemfiles/rails-6-0.gemfile
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set Up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-
-      - name: Run Tests
-        run: bundle exec rake
+      - run: bundle exec rake

@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     simple_form-theme (0.1.2)
-      rails (~> 6.1)
+      rails (>= 6.0, < 7.0)
       simple_form (~> 5.3.0)
 
 GEM
@@ -158,6 +158,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  rails (~> 6.1)
+  simple_form (~> 5.3.0)
   simple_form-theme!
   sqlite3
 
