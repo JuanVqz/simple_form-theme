@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.4](https://github.com/JuanVqz/simple_form-theme/compare/v0.1.3...v0.1.4) (2024-09-12)
+
+
+### Bug Fixes
+
+* **bulma:** Add textarea class to text field ([6065dab](https://github.com/JuanVqz/simple_form-theme/commit/6065dabcf30212341ff201831bbdd6a000ae53e0)), closes [#13](https://github.com/JuanVqz/simple_form-theme/issues/13)
+
+
+### Miscellaneous Chores
+
+* release 0.1.4 ([e209496](https://github.com/JuanVqz/simple_form-theme/commit/e209496190d8b6061148a350424e22f6f6b6d55d))
+
 ## [0.1.3](https://github.com/JuanVqz/simple_form-theme/compare/v0.1.2...v0.1.3) (2024-07-07)
 
 
