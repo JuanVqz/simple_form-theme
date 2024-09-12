@@ -108,6 +108,17 @@ SimpleForm.setup do |config|
     b.use :hint, wrap_with: { tag: 'small', class: 'help' }
   end
 
+  # bulma vertical textarea field
+  config.wrappers :vertical_text_form, tag: 'div', class: 'field' do |b|
+    b.use :html5
+    b.use :placeholder
+    b.optional :readonly
+    b.use :label, class: 'label'
+    b.use :input, class: 'textarea', wrap_with: { tag: 'div', class: 'control' }, error_class: 'is-danger', valid_class: 'is-success'
+    b.use :full_error, wrap_with: { tag: 'div', class: 'help is-danger' }
+    b.use :hint, wrap_with: { tag: 'small', class: 'form-text text-muted' }
+  end
+
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :vertical_form
 
@@ -121,6 +132,7 @@ SimpleForm.setup do |config|
     file: :vertical_file,
     radio_buttons: :vertical_collection,
     range: :vertical_range,
-    time: :vertical_multi_select
+    time: :vertical_multi_select,
+    text: :vertical_text_form
   }
 end
