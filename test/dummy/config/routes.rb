@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  mount SimpleForm::Theme::Engine => "/simple_form-theme"
+  mount SimpleForm::Theme::Engine => '/themes'
 end
